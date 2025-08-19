@@ -7,12 +7,11 @@ import PostFooter from './PostFooter'
 import PostAction from './PostAction'
 import { useState } from 'react'
 import { toast, Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, useDisclosure } from '@heroui/react'
-import CreateComment from './createComment'
+import CreateComment from './CreateComment'
 import { deletePost } from '../services/PostsService'
 import { AuthContext } from '../contexts/AuthContext'
 import CardDropdown from './CardDropdown'
 import Model from './Model'
-import { queryClient } from '../App'
 export default function Posts({ post, commentLimit, getAllPosts, }) {
     const [visibleComment, setVisibleComment] = useState(2)
     const [isCommentLoading, setIsCommentLoading] = useState(false);
