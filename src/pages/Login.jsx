@@ -14,7 +14,6 @@ export default function LoginPage() {
 
   const { setIsLoggedIn } = useContext(AuthContext)
   const [errMsg, setErrMsg] = React.useState('')
-  // const [isLoading, setIsLoading] = React.useState(false)
   const navigate = useNavigate()
 
   const { handleSubmit, register, formState: { errors } } = useForm(
